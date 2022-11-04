@@ -3,7 +3,6 @@ const path = require('path');
 const folder = path.join(__dirname, 'secret-folder');
 
 fs.readdir(folder, (err, files)=>{
-    
     files.forEach((file) => {
         let fileSize = fs.stat(path.join(__dirname, 'secret-folder', file), (err, fileStats) => {
             if (err) {
