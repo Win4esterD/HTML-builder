@@ -16,13 +16,3 @@ fs.readdir(folder, (err, files)=>{
     })
 })
 
-
-// fs.readdir('beforeExit', () => {
-//     console.log(fileNames)
-//     console.log(types)
-//     console.log(sizes)
-// })
-
-// fs.stat('README.md', (err, fileStats) => {
-//     console.log(fileStats)
-// })
