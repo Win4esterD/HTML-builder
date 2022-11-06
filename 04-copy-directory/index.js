@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-var rimraf = require("rimraf");
 const files = path.join(__dirname, 'files');
 const filesCopy = path.join(__dirname, 'files-copy');
 
