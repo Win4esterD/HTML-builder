@@ -28,23 +28,6 @@ let footer = '';
 
 let tags = []
 
-/* templateStream.on('data', chunk => {
-    template += chunk;
-    headerStream.on('data', chunk => {
-        header += chunk
-        template = template.replace(replaceHeader, header);
-        articlesStream.on('data', chunk => {
-            articles += chunk;
-            template = template.replace('{{articles}}', articles)
-            footerStream.on('data', chunk => {
-                footer += chunk;
-                template = template.replace('{{footer}}', footer)
-                index.write(template)
-            })
-        })
-    })
-    }) */
-
 templateStream.on('data', chunk => {
     template += chunk;
     fs.readdir(path.join(__dirname, 'components'), async (err, filesInComponents) =>{
